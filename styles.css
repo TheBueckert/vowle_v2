@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.headers,
+.game-board,
+.game-over-screen {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.headers {
+    padding: 1rem 0 2rem;
+}
+
+.headers p {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.game-round {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.3s all;
+}
+
+.wrong {
+    background-color: #898989;
+}
+
+.right {
+    background-color: #9fa;
+}
+
+.board-piece,
+.board-piece-played {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    background-color: transparent;
+}
+
+.board-piece:focus,
+.board-piece:focus-visible {
+    outline: none;
+}
+
+.game-over-screen {
+    display: none;
+}
+
+.game-over-text {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.game-over-text strong {
+    color: #9fa;
+}
+
+.retry-button {
+    background: #111184;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    transition: 0.2s all;
+}
+
+.retry-button:focus,
+.retry-button:hover {
+    box-shadow: 0 0 0 8px #9fa;
+}
+
+.extreme-link {
+    display: none;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.extreme-link a {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.extreme-link span {
+    color: black;
+    text-align: center;
+    text-shadow:
+        0px -1px 4px orangered,
+        0px -2px 10px yellow,
+        0px -10px 20px #ff8000,
+        0px -18px 40px red;
+}
