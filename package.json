@@ -1,0 +1,22 @@
+{
+  "name": "vowle_v2",
+  "version": "1.0.0",
+  "description": "A wordle clone but everything is a vowel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBueckert/vowle_v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheBueckert/vowle_v2/issues"
+  },
+  "homepage": "https://github.com/TheBueckert/vowle_v2#readme",
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
